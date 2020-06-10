@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:object="${book}">
+    <table>
+        <tr>
+            <th>ID</th>
+            <td th:text="*{id}"></td>
+        </tr>
+        <tr>
+            <th>Book Name</th>
+            <td th:text="*{bookName}"></td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td th:text="*{quantityInStock}"></td>
+        </tr>
+        <tr>
+            <th><input type="submit" th:value="Borrow"></th>
+        </tr>
+    </table>
+</form>
+</body>
+<style>
+    table, th, tr, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    td, th {
+        width: 200px;
+    }
+</style>
+</html>

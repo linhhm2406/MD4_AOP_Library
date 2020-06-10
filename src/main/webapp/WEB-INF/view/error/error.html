@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+<a th:href="@{/}">Back To List</a>
+<h1 th:if="${outOfQuantityMessage}!=null" th:text="${outOfQuantityMessage}"></h1>
+<h1 th:if="${notFindOrderCodeException}!=null" th:text="${notFindOrderCodeException}"></h1>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:object="${order}">
+    Input OrderCode:
+    <br>
+    <input type="text" th:field="*{orderCode}" name="orderCode">
+    <br>
+    <input type="submit" th:value="Return">
+</form>
+</body>
+</html>
